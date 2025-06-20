@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    height: 100dvh;
+    
+    ul {
+        height: 100%;
+        background: #303030;
+        width: 20rem;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            padding: 1rem;
+            color: aliceblue;
+            list-style: none;
+            align-items: center;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        li:hover {
+            filter: brightness(0.8);
+        }
+    }
+
+    .graphs {
+        width: calc(100dvw - 20rem);
+        background: rgb(179, 179, 179);
+        display: flex;
+        flex-direction: column;
+
+        .header {
+            padding: 1rem 3rem;
+            color: aliceblue;
+            background: #616161;
+
+            p {
+                color: #cacaca;
+            }
+        }
+
+        .timer {
+            padding: 1.5rem 3rem 0 3rem;
+        }
+
+        .dataBoxes {
+            padding: 1.5rem 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            color: #cacaca;
+            gap: 1rem;
+            /* padding: 1rem; */
+
+            .data {
+                background: #303030;
+                padding: 1rem;
+                border-radius: 10px;
+            }
+        }
+
+        .map {
+            padding: 0 3rem;
+        }
+    }
+
+    .active {
+        color: tomato;
+    }
+}
